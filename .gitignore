@@ -6,9 +6,6 @@
 /tmp
 /out-tsc
 
-# never upload
-/certs
-
 # dependencies
 /node_modules
 
