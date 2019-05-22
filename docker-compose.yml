@@ -9,5 +9,8 @@ services:
     volumes:
       - ./:/home/node/app
     expose:
-      - "8081"
+      - "1883"
+      - "8883"
+      - "1884"
+      - "8884"
     command: "npm start"
