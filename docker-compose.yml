@@ -8,6 +8,9 @@ services:
       - NODE_ENV=production
     volumes:
       - ./:/home/node/app
-    ports:
-      - "8080:8080"
+    expose:
+      - "1883"
+      - "8883"
+      - "1884"
+      - "8884"
     command: "npm start"
