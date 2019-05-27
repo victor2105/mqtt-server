@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "mqtt-server": "^0.1.0"
+  },
+  "devDependencies": {
+    "mqtt": "1.0.5"
   }
 }
