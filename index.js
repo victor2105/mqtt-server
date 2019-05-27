@@ -12,9 +12,11 @@ servers = mqttServer({
 //     cert: fs.readFileSync('./certs/server.crt')
 //   },
   emitEvents: true // default
-}, function(client){
-  client.connack({
-    returnCode: 0
+}, function(client){  
+  client.on('connect', function(){
+    client.connack({
+      returnCode: 0
+    });
   });
 });
  
