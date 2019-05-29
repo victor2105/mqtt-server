@@ -1,7 +1,7 @@
 
 var mqtt = require('mqtt');
 
-var c1 = mqtt.connect('mqtt://:1883');
+var c1 = mqtt.connect('mqtt://localhost:1883');
 
 c1.on('connect', function () {
     console.log("c1 ok");    
