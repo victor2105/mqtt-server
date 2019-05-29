@@ -18,8 +18,16 @@ servers = mqttServer({
       returnCode: 0
     });
   });
+  client.on('subscribe', function(a) {
+    console.log(a);
+  });
+  
+  client.on('publish', function(message) {
+    console.log(message);
+  })
+
 });
- 
+
 servers.listen(function(){
   console.log('listening!');
 });
