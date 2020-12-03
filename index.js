@@ -2,9 +2,9 @@ var fs = require('fs');
 var mqttServer = require('mqtt-server');
  
 servers = mqttServer({
-  mqtt: 'tcp://localhost:1883',
+  mqtt: 'tcp://0.0.0.0:1883',
 //  mqtts: 'ssl://localhost:8883',
-  mqttws: 'ws://localhost:1884',
+  mqttws: 'ws://0.0.0.0:1884',
   mqtwss: 'wss://localhost:8884'
 }, {
 //   ssl: {
