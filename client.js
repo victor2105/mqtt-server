@@ -17,7 +17,6 @@ c1.on('connect', function () {
 c1.on('message', function (topic, message) {
     // message is Buffer
     console.log(message.toString())
-    c1.end()
 })
 
 var c3 = mqtt.connect('ws://localhost:1884');
